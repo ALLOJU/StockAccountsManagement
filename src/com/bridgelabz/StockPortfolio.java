@@ -28,12 +28,12 @@ public class StockPortfolio {
 		System.out.println("\nName\tShares\tPrice\tValue");
 		
 		for(int i=0;i<stocks.size();i++) {
-			Stock s=(Stock)stocks.get(i);
+			Stock s=stocks.get(i);
 			totalValue += s.getValue();
-			System.out.println(s.getShareName()+"\t" +s.getShareNumber()+"\t" +s.getValue());
+			System.out.println(s.getShareName()+"\t" +s.getShareNumber()+"\t" +s.getValue()+"\t"+totalValue);
 		}
 	
-	System.out.println("\nTotal value is: " + totalValue);
+	
 	}
 
 
